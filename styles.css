@@ -1,0 +1,525 @@
+body {
+
+    font-family: 'EB Garamond', serif;
+    color: rgba( 0,0,0 , 0.65);
+}
+
+video {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar {
+    border-radius: 0em 0em 1.5em 1.5em;
+}
+.nav-link {
+    font-size: 20px;
+    margin-left: 5px;
+   
+}
+
+p {
+    font-size: 30px;
+}
+.purple {
+    color: #a630fc;
+
+}
+
+.blue {
+    color: #206cfc;
+}
+
+
+.header-div,.header-div-about,.header-div-contact,.header-div-work {
+    background-color: rgba(224, 224, 224, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 10px;
+    min-height: 0px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 0em 0em 1.5em 1.5em;
+    padding: 0;
+    overflow: hidden;
+    transition: min-height 2s ease; 
+    transition: min-height 2s ease, transform 2s ease; 
+    transform: translateY(-100%);
+}
+
+
+#bio {
+    color: 	rgba( 0,0,0 , 0.65);
+ 
+}
+#me, #propic {
+    padding: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(224, 224, 224, .5);
+}
+
+#me {
+    border-radius: 1.5em 0em  0em 1.5em;
+    
+}
+
+.home-row {
+    border-radius: 1.5em;
+}
+
+#propic {
+    color: 	rgba( 0,0,0 , 0.65);
+    border-radius:0em 1.5em  1.5em 0em ;
+}
+#pro,#bio {
+    padding: 2.5em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(224, 224, 224, .5);
+    
+    
+}
+#pro {
+    border-radius: 0 1.5em 1.5em 0;
+}
+#bio {
+    border-radius:1.5em 0 0 1.5em;
+}
+.row {
+    max-width: none;
+    margin-bottom: 80px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 5em;
+    border-radius: 1.5em;
+    
+    
+}
+.carousel-item {
+    height: 40em; /* Adjust the height of the carousel item as needed */
+}
+
+#slideshow-caption {
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    color: white;
+    opacity: 0; /* Hide caption by default */
+    z-index: 1; /* Ensure the captions appear above the images */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    transition: opacity 0.5s; /* Add transition effect for smoother visibility */
+    height: 100%;
+}
+
+#slideshow-caption:hover {
+    opacity: 1; /* Show caption on hover */
+}
+
+#slideshow-img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-height: 100%; /* Adjust the maximum height of the image */
+    max-width: 80%; /* Adjust the maximum width of the image */
+}
+
+.section {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 1em;
+}
+
+@media (max-width: 576px) {
+    .section {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+}
+
+.about-row {
+    max-width: none;
+    margin-bottom: 80px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+}
+.contact-row {
+    background-color: rgba(224, 224, 224, 0.5);
+    border-radius: 1.5em;
+    margin: 5em 12em;
+    padding: 2em;
+
+}
+
+.contact-col {
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: 3em;
+}
+
+#pro1,#pro2 {
+    width: 235px;
+}
+.p-about {
+    font-size: 1em;
+}
+.icons {
+    height: 75px;
+    margin: 10px; 
+    
+    
+}
+.sicons {
+    height: 45px;
+}
+
+.pause-div {
+    font-size: .65em;
+    font-weight: bold;
+    color: rgba( 0,0,0 , 0.65);
+}
+
+.header-div.slide-down {
+    min-height: 850px; 
+    transform: translateY(0); 
+}
+.header-div-about.slide-down {
+    min-height: 850px; 
+    transform: translateY(0); 
+}
+
+.header-div-contact.slide-down {
+    min-height: 850px; 
+    transform: translateY(0); 
+}
+
+.header-div-work.slide-down {
+    min-height: 850px; 
+    transform: translateY(0); 
+}
+
+.fade-in-out {
+    animation: fadeInOut 2s ease infinite alternate;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.drop-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 3s ease, transform 5s ease;
+}
+.drop-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+#profile-img {
+    max-height: 15em;
+    min-width: 13em;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.submitb {
+    border: solid 2px  rgba( 0,0,0 , 0.65);
+    background-color: transparent;
+    color: rgba( 0,0,0 , 0.65);
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s; 
+    border-radius: .5em; 
+}
+
+.submitb:hover {
+    color: rgba( 0,0,0 , 0.65); 
+}
+
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    video {
+        min-width: 100%;
+        min-height: auto;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+
+    .navbar-nav {
+        flex-direction: row; /* Stack nav items vertically on smaller screens */
+        margin-top: 10px; /* Add some spacing between nav items */
+    }
+    .nav-link {
+        font-size: 16px; /* Adjust font size for better visibility */
+        margin: 5px 0; /* Add spacing between nav items */
+        padding: 5px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .row, .about-row, .contact-row {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin: 1.5em 0;
+    }
+
+    #profile-img {
+        max-height: 12em;
+        min-width: 12em;
+    }
+    .contact-row {
+        margin: 2em 0; /* Adjust margin for better spacing */
+        padding: 1em; /* Adjust padding for better spacing */
+        border-radius: 1em; /* Adjust border radius for better appearance */
+    }
+
+    .contact-col {
+        padding: 1em; /* Adjust padding for better spacing */
+    }
+
+    .form-label {
+        font-size: 16px; /* Adjust font size for form labels */
+    }
+
+    .form-control {
+        font-size: 14px; /* Adjust font size for form inputs */
+    }
+
+    .submitb {
+        font-size: 16px; /* Adjust font size for submit button */
+        padding: 8px 16px; /* Adjust padding for submit button */
+    }
+    .header-div-contact {
+        padding: 2em; /* Increase padding for better spacing */
+        margin: 2em 0; /* Increase margin for better spacing */
+    }
+    .header-div-work {
+        padding: 2em; /* Increase padding for better spacing */
+    }
+    #bio {
+        margin-bottom: 2em; /* Increase margin bottom for better spacing */
+    }
+    #pro {
+        margin-top: 2em; /* Increase margin top for better spacing */
+    }
+    .sicons {
+        height: 30px; /* Reduce size of social icons */
+        margin: 5px; /* Add spacing between social icons */
+    }
+    .ic1,.ic2 {
+        height: 30px;
+        margin: 5px; 
+    }
+    .header-div.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    .header-div-about.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    
+    .header-div-contact.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    
+    .header-div-work.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    #pro {
+        border-radius:0 0 1.5em 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+    #bio {
+        border-radius: 1.5em 1.5em 0 0;
+        margin: 0;
+        padding: .25em;
+    }
+    .sicons {
+        height: 20px; /* Reduce size of social icons */
+        width: 20px; /* Reduce size of social icons */
+        margin: 5px; /* Add spacing between social icons */
+    }
+
+    .col-md-6 {
+        width: 100%; /* Ensure each column takes full width on smaller screens */
+    }
+
+    #me, #propic {
+        padding: 1em; /* Adjust padding */
+    }
+    #me {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+
+    #propic {
+        border-radius:  0 0 1.5em 1.5em;
+    }
+
+    #profile-img {
+        max-width: 100%; /* Ensure profile image fits within column */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .title-1,
+    .title-2,
+    .title-3,
+    .title-4,
+    .title-5 {
+        font-size: 1.5em; /* Adjust title font size for better visibility */
+    }
+
+    .p-about {
+        font-size: 1em; /* Adjust paragraph font size for better readability */
+    }
+    .header-div-about.slide-down {
+        min-height: 90em; 
+        transform: translateY(0); 
+    }
+    }
+
+
+/* Adjust the navbar font size and padding for smaller screens */
+@media (max-width: 576px) {
+  
+
+    .navbar-nav {
+        flex-direction: row; /* Keep nav items in a row */
+        justify-content: center; /* Center align nav items */
+    }
+    .nav-link {
+        font-size: 16px; /* Adjust font size for better visibility */
+        margin: 5px 0; /* Add spacing between nav items */
+        padding: 5px;
+    }
+    .sicons {
+        height: 30px; /* Reduce size of social icons */
+        margin: 5px; /* Add spacing between social icons */
+    }
+    #pro {
+        border-radius:0 0 1.5em 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+    #bio {
+        border-radius: 1.5em 1.5em 0 0;
+        margin: 0;
+        padding: .25em;
+    }
+    .sicons {
+        height: 20px; /* Reduce size of social icons */
+        width: 20px; /* Reduce size of social icons */
+        margin: 1em; /* Add spacing between social icons */
+    }
+    .row {
+        flex-direction: column; /* Change row to column layout */
+        align-items: center; /* Center items in column */
+        padding-top: 0;
+    }
+  
+    .contact-row {
+        margin: 2em 0; /* Adjust margin for better spacing */
+        padding: 1em; /* Adjust padding for better spacing */
+        border-radius: 1em; /* Adjust border radius for better appearance */
+    }
+    .header-div-work {
+        padding: 2em; /* Increase padding for better spacing */
+    }
+    .sicons {
+        height: 30px; /* Reduce size of social icons */
+        margin: 2px; /* Add spacing between social icons */
+    }
+    #bio p {
+        font-size: 16px;
+    }
+    .ic1,.ic2 {
+        height: 30px;
+        margin: 5px; 
+    }
+    .row.about-row {
+        position: static; /* Remove absolute positioning */
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+    
+    .col-md-6 {
+        width: 100%; /* Ensure each column takes full width on smaller screens */
+    }
+
+    #me, #propic {
+        padding: 1em; /* Adjust padding */
+    }
+    #me {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+
+    #propic {
+        border-radius:  0 0 1.5em 1.5em;
+    }
+
+    #profile-img {
+        max-width: 100%; /* Ensure profile image fits within column */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .title-1,
+    .title-2,
+    .title-3,
+    .title-4,
+    .title-5 {
+        font-size: 1.5em; /* Adjust title font size for better visibility */
+    }
+
+    .p-about {
+        font-size: 1em; /* Adjust paragraph font size for better readability */
+    }
+    .header-div.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    .header-div-about.slide-down {
+        min-height: 120em; 
+        transform: translateY(0); 
+    }
+    
+    .header-div-contact.slide-down {
+        min-height: 40em; 
+        transform: translateY(0); 
+    }
+    
+    .header-div-work.slide-down {
+        min-height: 60em; 
+        transform: translateY(0); 
+    }
+    .carousel-item {
+        height: 60em;
+    }
+    
+}
+
+
+
+
+
