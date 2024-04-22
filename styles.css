@@ -102,7 +102,7 @@ p {
     
 }
 .carousel-item {
-    height: 40em; /* Adjust the height of the carousel item as needed */
+    height: 40em; 
 }
 
 #slideshow-caption {
@@ -113,33 +113,33 @@ p {
     width: 80%;
     text-align: center;
     color: white;
-    opacity: 0; /* Hide caption by default */
-    z-index: 1; /* Ensure the captions appear above the images */
+    opacity: 0; 
+    z-index: 1; 
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    transition: opacity 0.5s; /* Add transition effect for smoother visibility */
+    transition: opacity 0.5s; 
     height: 100%;
 }
 
 #slideshow-caption:hover {
-    opacity: 1; /* Show caption on hover */
+    opacity: 1;
 }
 
 #slideshow-img {
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    max-height: 100%; /* Adjust the maximum height of the image */
-    max-width: 80%; /* Adjust the maximum width of the image */
+    margin: 0 auto; 
+    max-height: 100%; 
+    max-width: 80%; 
 }
 
 .section {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px; 
     padding: 1em;
 }
 
 @media (max-width: 576px) {
     .section {
-        font-size: 12px; /* Adjusted font size for smaller screens */
+        font-size: 12px; 
     }
 }
 
@@ -264,12 +264,12 @@ p {
 
 
     .navbar-nav {
-        flex-direction: row; /* Stack nav items vertically on smaller screens */
-        margin-top: 10px; /* Add some spacing between nav items */
+        flex-direction: row;
+        margin-top: 10px; 
     }
     .nav-link {
-        font-size: 16px; /* Adjust font size for better visibility */
-        margin: 5px 0; /* Add spacing between nav items */
+        font-size: 16px; 
+        margin: 5px 0; 
         padding: 5px;
     }
 
@@ -288,43 +288,43 @@ p {
         min-width: 12em;
     }
     .contact-row {
-        margin: 2em 0; /* Adjust margin for better spacing */
-        padding: 1em; /* Adjust padding for better spacing */
-        border-radius: 1em; /* Adjust border radius for better appearance */
+        margin: 2em 0; 
+        padding: 1em; 
+        border-radius: 1em; 
     }
 
     .contact-col {
-        padding: 1em; /* Adjust padding for better spacing */
+        padding: 1em; 
     }
 
     .form-label {
-        font-size: 16px; /* Adjust font size for form labels */
+        font-size: 16px; 
     }
 
     .form-control {
-        font-size: 14px; /* Adjust font size for form inputs */
+        font-size: 14px; 
     }
 
     .submitb {
-        font-size: 16px; /* Adjust font size for submit button */
-        padding: 8px 16px; /* Adjust padding for submit button */
+        font-size: 16px; 
+        padding: 8px 16px; 
     }
     .header-div-contact {
-        padding: 2em; /* Increase padding for better spacing */
-        margin: 2em 0; /* Increase margin for better spacing */
+        padding: 2em; 
+        margin: 2em 0; 
     }
     .header-div-work {
-        padding: 2em; /* Increase padding for better spacing */
+        padding: 2em; 
     }
     #bio {
-        margin-bottom: 2em; /* Increase margin bottom for better spacing */
+        margin-bottom: 2em; 
     }
     #pro {
-        margin-top: 2em; /* Increase margin top for better spacing */
+        margin-top: 2em; 
     }
     .sicons {
-        height: 30px; /* Reduce size of social icons */
-        margin: 5px; /* Add spacing between social icons */
+        height: 30px; 
+        margin: 5px; 
     }
     .ic1,.ic2 {
         height: 30px;
@@ -359,17 +359,17 @@ p {
         padding: .25em;
     }
     .sicons {
-        height: 20px; /* Reduce size of social icons */
-        width: 20px; /* Reduce size of social icons */
-        margin: 5px; /* Add spacing between social icons */
+        height: 20px; 
+        width: 20px; 
+        margin: 5px; 
     }
 
     .col-md-6 {
-        width: 100%; /* Ensure each column takes full width on smaller screens */
+        width: 100%; 
     }
 
     #me, #propic {
-        padding: 1em; /* Adjust padding */
+        padding: 1em; 
     }
     #me {
         border-radius: 1.5em 1.5em 0 0;
@@ -380,8 +380,8 @@ p {
     }
 
     #profile-img {
-        max-width: 100%; /* Ensure profile image fits within column */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%;
+        height: auto; 
     }
 
     .title-1,
@@ -389,35 +389,49 @@ p {
     .title-3,
     .title-4,
     .title-5 {
-        font-size: 1.5em; /* Adjust title font size for better visibility */
+        font-size: 1.5em; 
     }
 
     .p-about {
-        font-size: 1em; /* Adjust paragraph font size for better readability */
+        font-size: 1em;
     }
     .header-div-about.slide-down {
-        min-height: 90em; 
-        transform: translateY(0); 
+        min-height: 90vh; 
+        transform: translateY(0);
+    }
+
+    .carousel-item {
+        min-height: 90vh; 
+        height: 100vh;
+    }
+    .header-div-contact.slide-down {
+        min-height: 90vh; 
+        transform: translateY(0);
+    }
+    
+    .header-div-work.slide-down {
+        min-height: 90vh; 
+        transform: translateY(0);
     }
     }
 
 
-/* Adjust the navbar font size and padding for smaller screens */
+
 @media (max-width: 576px) {
   
 
     .navbar-nav {
-        flex-direction: row; /* Keep nav items in a row */
-        justify-content: center; /* Center align nav items */
+        flex-direction: row;
+        justify-content: center; 
     }
     .nav-link {
-        font-size: 16px; /* Adjust font size for better visibility */
-        margin: 5px 0; /* Add spacing between nav items */
+        font-size: 16px; 
+        margin: 5px 0; 
         padding: 5px;
     }
     .sicons {
-        height: 30px; /* Reduce size of social icons */
-        margin: 5px; /* Add spacing between social icons */
+        height: 30px;
+        margin: 5px; 
     }
     #pro {
         border-radius:0 0 1.5em 1.5em;
@@ -430,27 +444,27 @@ p {
         padding: .25em;
     }
     .sicons {
-        height: 20px; /* Reduce size of social icons */
-        width: 20px; /* Reduce size of social icons */
-        margin: 1em; /* Add spacing between social icons */
+        height: 20px; 
+        width: 20px; 
+        margin: 1em; 
     }
     .row {
-        flex-direction: column; /* Change row to column layout */
-        align-items: center; /* Center items in column */
+        flex-direction: column; 
+        align-items: center;
         padding-top: 0;
     }
   
     .contact-row {
-        margin: 2em 0; /* Adjust margin for better spacing */
-        padding: 1em; /* Adjust padding for better spacing */
-        border-radius: 1em; /* Adjust border radius for better appearance */
+        margin: 2em 0; 
+        padding: 1em; 
+        border-radius: 1em; 
     }
     .header-div-work {
-        padding: 2em; /* Increase padding for better spacing */
+        padding: 2em;
     }
     .sicons {
-        height: 30px; /* Reduce size of social icons */
-        margin: 2px; /* Add spacing between social icons */
+        height: 30px; 
+        margin: 2px; 
     }
     #bio p {
         font-size: 16px;
@@ -460,16 +474,16 @@ p {
         margin: 5px; 
     }
     .row.about-row {
-        position: static; /* Remove absolute positioning */
-        flex-direction: column; /* Stack columns vertically on smaller screens */
+        position: static; 
+        flex-direction: column; 
     }
     
     .col-md-6 {
-        width: 100%; /* Ensure each column takes full width on smaller screens */
+        width: 100%; 
     }
 
     #me, #propic {
-        padding: 1em; /* Adjust padding */
+        padding: 1em;
     }
     #me {
         border-radius: 1.5em 1.5em 0 0;
@@ -480,8 +494,8 @@ p {
     }
 
     #profile-img {
-        max-width: 100%; /* Ensure profile image fits within column */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%;
+        height: auto; 
     }
 
     .title-1,
@@ -489,32 +503,42 @@ p {
     .title-3,
     .title-4,
     .title-5 {
-        font-size: 1.5em; /* Adjust title font size for better visibility */
+        font-size: 1.5em;
     }
 
     .p-about {
-        font-size: 1em; /* Adjust paragraph font size for better readability */
+        font-size: 1em; 
     }
     .header-div.slide-down {
-        min-height: 40em; 
+        min-height: 90vh; 
         transform: translateY(0); 
     }
     .header-div-about.slide-down {
-        min-height: 120em; 
-        transform: translateY(0); 
+        min-height: 90vh; 
+        transform: translateY(0);
     }
     
     .header-div-contact.slide-down {
-        min-height: 40em; 
-        transform: translateY(0); 
+        min-height: 90vh; 
+        transform: translateY(0);
     }
     
     .header-div-work.slide-down {
-        min-height: 60em; 
-        transform: translateY(0); 
+        min-height: 90vh; 
+        transform: translateY(0);
     }
     .carousel-item {
-        height: 60em;
+        min-height: 90vh; 
+        height: 100vh;
+    }
+    video::-webkit-media-controls {
+        display: none !important; 
+    }
+    video::-webkit-media-controls-enclosure {
+        display: none !important;
+    }
+    video::-webkit-media-controls-panel {
+        display: none !important;
     }
     
 }

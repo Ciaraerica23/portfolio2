@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video src="images/galaxy_space.mov" autoplay loop muted></video>
+    <video id="video-bg" autoplay loop muted playsinline>
+        <source src="images/galaxy_space.mov" type="video/mp4">
+    </video>
     <div class="container-lg header-div" id="navbar">
         <nav class="navbar navbar-expand-lg">
             <div class="navbar-nav">
@@ -28,7 +30,7 @@
                 </a>
             </div>
         </nav>
-        <div class="row" style="position: absolute; bottom: 0; width: 100%;">
+        <div class="row">
             <div class="col-md-6 d-flex flex-column align-items-start justify-content-end" id="bio">
                 <h1>Hi, I'm Ciara Stafford!</h1>
                 <p>I'm a <span class="purple">Software Engineer</span> based in <span class="purple">Philadelphia, PA</span>, specializing in crafting scalable and efficient software applications. With a <span class="blue">passion</span> for coding, I thrive on solving complex problems and building <span class="blue">elegant</span> solutions that drive innovation.</p>        

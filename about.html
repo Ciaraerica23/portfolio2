@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body class="aboutbody">
-    <video src="images/galaxy_space.mov" autoplay loop muted></video>
+    <video id="video-bg" autoplay loop muted playsinline>
+        <source src="images/galaxy_space.mov" type="video/mp4">
+    </video>
     <div class="container-lg header-div-about">
       <nav class="navbar navbar-expand-lg">
         <div class="navbar-nav">
@@ -28,7 +30,7 @@
             </a>
         </div>
     </nav>
-          <div class="row about-row" style="position: absolute; bottom: 0; width: 100%;">
+          <div class="row about-row">
             <div class="col-md-6 d-flex flex-column align-items-start justify-content-end" id="me">
                 <h2 class="title-1 drop-in" id="title1">About Me</h2>
                 <p class="p-about drop-in" id="about-1">Hi there! I'm Ciara Stafford, a passionate software engineer with a background as a Registered Behavior Technician (RBT) and now a dedicated single mom to a wonderful toddler. My journey into the world of technology has been a dynamic one, driven by my insatiable curiosity and love for problem-solving.</p>
