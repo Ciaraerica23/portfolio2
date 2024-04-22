@@ -42,10 +42,10 @@ $(document).ready(function() {
         // Change button icon based on the state
         const playPauseIcon = $('#playPauseIcon');
         if (isPaused) {
-            playPauseIcon.attr('src', 'icons8-pause-64.png');
+            playPauseIcon.attr('src', 'images/icons8-pause-64.png');
             playPauseIcon.attr('alt', 'Pause');
         } else {
-            playPauseIcon.attr('src', 'icons8-play-button-64.png');
+            playPauseIcon.attr('src', 'images/icons8-play-button-64.png');
             playPauseIcon.attr('alt', 'Play');
         }
     
