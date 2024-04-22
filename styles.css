@@ -85,6 +85,13 @@ p {
     
     
 }
+
+.btn-git {
+    background-color: #206cfc;
+}
+.btn-dep {
+    background-color: #a630fc;
+}
 #pro {
     border-radius: 0 1.5em 1.5em 0;
 }
@@ -140,6 +147,7 @@ p {
 @media (max-width: 576px) {
     .section {
         font-size: 12px; 
+        padding:.25em
     }
 }
 
